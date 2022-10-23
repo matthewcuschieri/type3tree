@@ -1,0 +1,556 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+.menu {
+  margin: 0;
+  color: white;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+header {
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+  top: 0px;
+  height: 1.3vh;
+  margin-top: 0;
+  background-color: #e3e3e3;
+  box-sizing: border-box;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1300;
+  display: flex;
+  font-size: 11px;
+  line-height: 1.15 !important;
+}
+
+#wrapper {
+  grid-template-rows: auto;
+}
+div[class^="viewport"] {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.viewport-one {
+  grid-row: 1;
+  overflow-x: hidden;
+}
+.viewport-two {
+  grid-row: 2;
+  overflow-x: hidden;
+}
+.viewport-three {
+  grid-row: 3;
+  overflow-x: hidden;
+}
+.one {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+.two {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+}
+.three {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
+}
+.four {
+  grid-column: 4 / span 2;
+  grid-row: 3 / span 2;
+}
+
+#second,
+#first {
+  justify-self: center;
+  background-color: #0f0f0f;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-size: 13px;
+  text-align: center;
+  padding-right: 3rem !important;
+  margin: auto;
+
+  overflow-x: hidden;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.topsecond {
+  justify-self: center;
+  background-color: #d9d9d9;
+  color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  font-size: 500px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  text-align: center;
+  padding-right: 3rem !important;
+  margin: auto;
+  line-height: 0;
+  overflow: hidden;
+}
+.topthird {
+  justify-self: center;
+  background-color: #d9d9d9;
+  color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  top: 0;
+
+  font-family: helvetica;
+  margin-bottom: 0;
+  font-size: 500px;
+  text-align: center;
+  padding-right: 3rem !important;
+  margin: auto;
+  line-height: 0;
+  overflow: hidden;
+}
+.topfourth {
+  justify-self: center;
+  background-color: #d9d9d9;
+  color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  font-size: 500px;
+  text-align: center;
+  padding-right: 3rem !important;
+  margin: auto;
+  line-height: 0;
+  overflow: hidden;
+}
+.botsecond {
+  justify-self: center;
+  background-color: #d9d9d9;
+  color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-top: 0;
+  top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  font-size: 500px;
+  text-align: center;
+  padding-right: 3rem !important;
+  margin: auto;
+  line-height: 0;
+  overflow: hidden;
+}
+.botthird {
+  justify-self: center;
+  background-color: #d9d9d9;
+  color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  font-family: helvetica;
+  margin-bottom: 0;
+  font-size: 500px;
+  justify-self: center;
+  text-align: center;
+  padding-right: 3rem !important;
+  margin: auto;
+  line-height: 0;
+  overflow: hidden;
+}
+.text {
+  color: #0f0f0f;
+  width: 100%;
+  margin-top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  max-height: 100vh;
+  text-align: left;
+  padding-right: 3rem !important;
+  margin: auto;
+  overflow: scroll;
+  /* text-align: justify; */
+  text-justify: inter-word;
+}
+
+div[class^="secondback"] {
+  color: #0f0f0f;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  max-height: 100vh;
+  text-align: left;
+  margin-bottom: 0 !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+div[class^="thirdback"] {
+  color: #0f0f0f;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  max-height: 100vh;
+  text-align: left;
+  margin-bottom: 0 !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+div[class^="fourthback"] {
+  color: #0f0f0f;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  max-height: 100vh;
+  text-align: left;
+  margin-bottom: 0 !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+#sideone {
+  margin-left: 1vh;
+  padding-top: 2vh;
+  margin-bottom: 0 !important;
+  grid-column: 1;
+  height: 100%;
+  border-right: 5px #0f0f0f solid;
+  display: flex;
+  flex-direction: column;
+}
+#sidetwo {
+  margin-bottom: 0 !important;
+  grid-column: 2 !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-left: 5px #0f0f0f solid;
+  justify-content: center;
+  align-items: center;
+}
+#contentone {
+  margin-bottom: 0 !important;
+
+  height: 100%;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+}
+
+.jcarousel-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  grid-column: 1 / span 2;
+  margin-right: -3rem;
+  margin-top: -4rem;
+}
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+
+  display: none;
+
+  grid-column: 1/3;
+
+  width: 100%;
+  transition: 0.9s ease-in-out;
+
+  -webkit-transition: 0.5s ease-in-out;
+}
+.jcarousel .show {
+  display: inline-block;
+}
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+  width: 1000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.LayerArrow {
+  box-shadow: 0px 0px 0px 0px !important;
+  display: block;
+  margin: auto;
+}
+.LayerArrow:hover {
+  filter: drop-shadow(0 0 3px #333);
+}
+#next-zone:hover + .LayerArrow {
+  filter: drop-shadow(0 0 3px #333);
+}
+.cls-1:hover {
+  fill: #0a0a0a;
+}
+.jcarousel .show {
+  display: inline-block;
+}
+#Layer_2 {
+  width: 15vw;
+}
+.cls-1:hover {
+  fill: #0a0a0a;
+}
+#bodytext {
+  max-width: 70%;
+  margin-left: 2vw;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 1.25;
+  font-family: Union Regular, sans-serif;
+  font-size: 1.675vw;
+}
+#serif {
+  max-width: 20rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div[class^="big"] {
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  line-height: 0px;
+  display: flex;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div[class^="fig"] {
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  line-height: 0px;
+  display: flex;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+  /* Required only for block elements like <li>'s */
+  float: left;
+
+  left: 0;
+}
+
+#prev-zone {
+  left: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 12.5vw;
+  transform: scaleX(-1);
+  overflow: visible;
+  filter: drop-shadow(0 0 0) !important;
+  z-index: 5000;
+  pointer-events: auto;
+  justify-content: center;
+}
+#next-zone {
+  right: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 12.5vw;
+  overflow: visible;
+  z-index: 5000;
+  filter: drop-shadow(0 0 0) !important;
+}
+/* .columbia {
+  transition: 0.9s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+
+  justify-content: center;
+  background-color: whitesmoke;
+  box-shadow: 1px 3px 2px 1px #333;
+  align-items: center;
+  display: block;
+} */
+img {
+  width: 50%;
+  height: auto;
+
+  margin: auto;
+
+  margin-top: 11vh;
+
+  justify-content: center;
+  align-items: center;
+  /* filter: drop-shadow(0 0 4px #333); */
+}
+.fourthcarousel {
+  color: #0f0f0f;
+  background-color: #0f0f0f;
+  width: 100%;
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  font-family: helvetica;
+  margin-bottom: 0;
+  text-align: left;
+
+  height: 100%;
+  padding-right: 3rem !important;
+}
+#prev-zone:hover {
+  pointer-events: auto;
+
+  cursor: url(Artboard.svg) 0 32, auto;
+}
+#next-zone:hover {
+  pointer-events: auto;
+
+  cursor: url(arrow.svg) 0 32, auto;
+}
+.square {
+  background-color: #0f0f0f;
+  width: 2.4vw;
+  height: 3rem;
+}
+.row {
+  background-color: #0f0f0f;
+  width: 100vw;
+  height: 1rem;
+  margin-left: 2.4vw;
+  margin-right: 2.4vw;
+  z-index: 800;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.col {
+  background-color: #0f0f0f;
+  width: 1rem;
+  height: 100vh;
+  margin: 0;
+
+  z-index: 800;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#left {
+  grid-column: 1;
+
+  margin: 0;
+  position: fixed;
+  top: 52.8%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#right {
+  grid-column: 7;
+  margin: 0;
+  position: fixed;
+  top: 52.8%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#identity {
+  background-color: #0f0f0f;
+  width: fit-content;
+  padding: 2%;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  color: #fff;
+  border-radius: 16px;
+}
+#title {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+}
+#info {
+  padding-bottom: 0;
+  font-size: 13px;
+  letter-spacing: -0.6px;
+  font-stretch: 50%;
+  align-self: flex-end;
+  justify-self: baseline;
+  bottom: 0;
+}
