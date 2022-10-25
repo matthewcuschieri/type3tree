@@ -46,3 +46,123 @@ $(function () {
     $(".topfourth").replaceWith("<div class='sideback;]'");
   });
 });
+$(function () {
+  $(".fig2").click(function (e) {
+    e.preventDefault();
+    $(".fifthcarousel").toggle().css("display:show");
+    $(".topfifth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig3").click(function (e) {
+    e.preventDefault();
+    $(".sixthcarousel").toggle().css("display:show");
+    $(".topsixth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig4").click(function (e) {
+    e.preventDefault();
+    $(".seventhcarousel").toggle().css("display:show");
+    $(".topseventh").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig5").click(function (e) {
+    e.preventDefault();
+    $(".eigthcarousel").toggle().css("display:show");
+    $(".topeigth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig6").click(function (e) {
+    e.preventDefault();
+    $(".ninthcarousel").toggle().css("display:show");
+    $(".topninth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig7").click(function (e) {
+    e.preventDefault();
+    $(".tenthcarousel").toggle().css("display:show");
+    $(".toptenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig8").click(function (e) {
+    e.preventDefault();
+    $(".eleventhcarousel").toggle().css("display:show");
+    $(".topeleventh").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig9").click(function (e) {
+    e.preventDefault();
+    $(".twelthcarousel").toggle().css("display:show");
+    $(".toptwelth").replaceWith("<div class='sideback;]'");
+  });
+});
+
+$(function () {
+  $(".bigE").click(function (e) {
+    e.preventDefault();
+    $(".thirteenthbackE").toggle().css("display:show");
+    $(".topthirteenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigF").click(function (e) {
+    e.preventDefault();
+    $(".thirteenthbackF").toggle().css("display:show");
+    $(".botthirteenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigG").click(function (e) {
+    e.preventDefault();
+    $(".fourteenthbackG").toggle().css("display:show");
+    $(".topfourteenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigHI").click(function (e) {
+    e.preventDefault();
+    $(".fourteenthbackHI").toggle().css("display:show");
+    $(".botfourteenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigJ").click(function (e) {
+    e.preventDefault();
+    $(".fifteenthbackJ").toggle().css("display:show");
+    $(".topfifteenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigK").click(function (e) {
+    e.preventDefault();
+    $(".fifteenthbackK").toggle().css("display:show");
+    $(".botfifteenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigL").click(function (e) {
+    e.preventDefault();
+    $(".seventeenthbackL").toggle().css("display:show");
+    $(".topseventeenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".bigM").click(function (e) {
+    e.preventDefault();
+    $(".seventeenthbackM").toggle().css("display:show");
+    $(".botseventeenth").replaceWith("<div class='sideback;]'");
+  });
+});
+$(function () {
+  $(".fig10").click(function (e) {
+    e.preventDefault();
+    $(".eighteenthcarousel").toggle().css("display:show");
+    $(".topeighteenth").replaceWith("<div class='sideback;]'");
+  });
+});
