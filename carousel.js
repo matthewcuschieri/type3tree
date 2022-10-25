@@ -1,17 +1,17 @@
 (function ($) {
   $(function () {
     /*
-        Carousel initialization
-        */
+      Carousel initialization
+      */
     $(".jcarousel").jcarousel({
       // Options go here
       wrap: "circular",
-      scroll: 1,
+      scroll: "1",
     });
 
     /*
-         Prev control initialization
-         */
+       Prev control initialization
+       */
     $(".jcarousel-control-prev")
       .on("jcarouselcontrol:active", function () {
         $(this).removeClass("inactive");
@@ -25,8 +25,8 @@
       });
 
     /*
-         Next control initialization
-         */
+       Next control initialization
+       */
     $(".jcarousel-control-next")
       .on("jcarouselcontrol:active", function () {
         $(this).removeClass("inactive");
