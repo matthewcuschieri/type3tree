@@ -166,3 +166,10 @@ $(function () {
     $(".topeighteenth").replaceWith("<div class='sideback;]'");
   });
 });
+$(function () {
+  $(".fig11").click(function (e) {
+    e.preventDefault();
+    $(".nineteenthcarousel").toggle().css("display:show");
+    $(".topnineteenth").replaceWith("<div class='sideback;]'");
+  });
+});
