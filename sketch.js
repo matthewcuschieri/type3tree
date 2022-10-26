@@ -176,19 +176,16 @@ $(function () {
 
 const wrapper = document.getElementById("wrapperviewport");
 
-// wrapper.addEventListener("scroll", function (e) {
-//   console.log(e);
-// });
-
 gsap.registerPlugin(ScrollTrigger);
 // Logo to header animation
 let logoTl = gsap.timeline({
   scrollTrigger: {
     trigger: document.body,
-    start: 1,
+    start: 10,
     end: () => window.innerHeight,
     markers: true,
     pin: wrapper,
+    toggleActions: "play none none reverse",
   },
 });
 
@@ -213,22 +210,3 @@ logoTl.fromTo(
     duration: 0.01,
   }
 );
-
-// const sections = gsap.utils.toArray("viewport");
-
-// console.log(sections);
-
-// // Attempt to snap sections on scroll
-// sections.forEach((panel, i) => {
-//   ScrollTrigger.create({
-//     trigger: panel,
-//     start: "top top",
-//     pin: true,
-//     pinSpacing: false,
-//     markers: true,
-//   });
-// });
-
-// ScrollTrigger.create({
-//   snap: 1 / (sections.length - 1), // snap whole page to the closest section!
-// });
