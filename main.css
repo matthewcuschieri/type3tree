@@ -11,7 +11,7 @@ body {
 .menu {
   margin: 0;
   color: white;
-  z-index: 1000;
+  z-index: 100000;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -45,43 +45,57 @@ header {
 #wrapper {
   grid-template-rows: auto;
 }
-div[class^="viewport"] {
+.wrapperviewport {
+  /* overflow-y: hidden;
+  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh; */
+  scroll-snap-type: proximity;
+}
+div[class^="viewport"] {
+  position: sticky;
+  height: 101vh;
+  width: 100vw;
+  scroll-snap-type: proximity;
   margin: 0px;
+
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
 }
-.viewport-one {
-  grid-row: 1;
-  overflow-x: hidden;
+
+#viewport-one {
+  position: absolute;
 }
-.viewport-two {
-  grid-row: 2;
-  overflow-x: hidden;
+
+#viewport-two {
+  position: absolute;
+  opacity: 0;
 }
-.viewport-three {
-  grid-row: 3;
-  overflow-x: hidden;
-}
+
 .one {
+  scroll-snap-align: start;
   grid-column: 2 / span 2;
   grid-row: 1 / span 2;
 }
 .two {
+  scroll-snap-align: start;
   grid-column: 4 / span 2;
   grid-row: 1 / span 2;
 }
 .three {
   grid-column: 2 / span 2;
   grid-row: 3 / span 2;
+  scroll-snap-align: end;
 }
 .four {
   grid-column: 4 / span 2;
   grid-row: 3 / span 2;
+  scroll-snap-align: end;
 }
 
 #second,
@@ -1254,14 +1268,7 @@ img {
 div {
   display: block;
 }
-a,
-a:hover,
-a:focus,
-a:active {
-  outline: none !important;
-  text-decoration: none;
-  color: #000;
-}
+
 #title {
   font-family: Helvetica, sans-serif;
   font-weight: 100;
@@ -1276,3 +1283,17 @@ a:active {
   bottom: 0;
   margin-top: auto;
 }
+
+/* .wrapperviewport .viewport:nth-child(1) {
+  display: grid;
+}
+
+.wrapperviewport .viewport:nth-child(2) {
+  display: none;
+}
+.viewport {
+  display: none;
+}
+.viewport.active {
+  display: grid;
+} */
