@@ -1,9 +1,9 @@
-$(function () {
-  $("#wrapper").click(function (e) {
-    e.preventDefault();
-    $(".viewport-one").replaceWith("<div class=viewport-two;'");
-  });
-});
+// $(function () {
+//   $("#wrapper").click(function (e) {
+//     e.preventDefault();
+//     $(".viewport-one").replaceWith("<div class=viewport-two;'");
+//   });
+// });
 
 $(function () {
   $(".bigB").click(function (e) {
@@ -173,3 +173,62 @@ $(function () {
     $(".topnineteenth").replaceWith("<div class='sideback;]'");
   });
 });
+
+const wrapper = document.getElementById("wrapperviewport");
+
+// wrapper.addEventListener("scroll", function (e) {
+//   console.log(e);
+// });
+
+gsap.registerPlugin(ScrollTrigger);
+// Logo to header animation
+let logoTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: document.body,
+    start: 1,
+    end: () => window.innerHeight,
+    markers: true,
+    pin: wrapper,
+  },
+});
+
+logoTl.fromTo(
+  "#viewport-two",
+  {
+    opacity: 0,
+  },
+  {
+    opacity: 1,
+    duration: 0.01,
+  }
+);
+
+logoTl.fromTo(
+  "#viewport-one",
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+    duration: 0.01,
+  }
+);
+
+// const sections = gsap.utils.toArray("viewport");
+
+// console.log(sections);
+
+// // Attempt to snap sections on scroll
+// sections.forEach((panel, i) => {
+//   ScrollTrigger.create({
+//     trigger: panel,
+//     start: "top top",
+//     pin: true,
+//     pinSpacing: false,
+//     markers: true,
+//   });
+// });
+
+// ScrollTrigger.create({
+//   snap: 1 / (sections.length - 1), // snap whole page to the closest section!
+// });
