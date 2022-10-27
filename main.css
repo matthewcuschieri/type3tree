@@ -63,7 +63,6 @@ header {
   width: 100vw;
   max-width: 100vw;
   max-height: 100vh; */
-  scroll-snap-type: proximity;
 }
 div[class^="viewport"] {
   position: sticky;
@@ -87,26 +86,26 @@ div[class^="viewport"] {
   position: absolute;
   opacity: 0;
 }
+#viewport-three {
+  position: absolute;
+  opacity: 0;
+}
 
 .one {
-  scroll-snap-align: start;
   grid-column: 2 / span 2;
   grid-row: 1 / span 2;
 }
 .two {
-  scroll-snap-align: start;
   grid-column: 4 / span 2;
   grid-row: 1 / span 2;
 }
 .three {
   grid-column: 2 / span 2;
   grid-row: 3 / span 2;
-  scroll-snap-align: end;
 }
 .four {
   grid-column: 4 / span 2;
   grid-row: 3 / span 2;
-  scroll-snap-align: end;
 }
 
 #second,
@@ -989,6 +988,7 @@ that the width is big enough to contain all items.
   line-height: 1.25;
   font-family: Union Regular, sans-serif;
   font-size: 1.675vw;
+  background-color: white;
 }
 #serif {
   max-width: 20rem;
