@@ -178,19 +178,32 @@ const wrapper = document.getElementById("wrapperviewport");
 
 gsap.registerPlugin(ScrollTrigger);
 // Logo to header animation
-let logoTl = gsap.timeline({
+let begTl = gsap.timeline({
   scrollTrigger: {
     trigger: document.body,
     start: 10,
-    end: () => window.innerHeight,
+    end: "+=" + window.innerHeight - 1,
     markers: true,
     pin: wrapper,
     toggleActions: "play none none reverse",
+    ease: "none",
   },
 });
+begTl.fromTo(
+  "#viewport-one",
 
-logoTl.fromTo(
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+    duration: 0.01,
+  }
+);
+
+begTl.fromTo(
   "#viewport-two",
+
   {
     opacity: 0,
   },
@@ -199,14 +212,14 @@ logoTl.fromTo(
     duration: 0.01,
   }
 );
+begTl.fromTo(
+  "#viewport-three",
 
-logoTl.fromTo(
-  "#viewport-one",
-  {
-    opacity: 1,
-  },
   {
     opacity: 0,
+  },
+  {
+    opacity: 1,
     duration: 0.01,
   }
 );
