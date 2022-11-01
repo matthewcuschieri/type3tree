@@ -177,49 +177,116 @@ $(function () {
 const wrapper = document.getElementById("wrapperviewport");
 
 gsap.registerPlugin(ScrollTrigger);
-// Logo to header animation
-let begTl = gsap.timeline({
-  scrollTrigger: {
-    trigger: document.body,
-    start: 10,
-    end: "+=" + window.innerHeight - 1,
-    markers: true,
-    pin: wrapper,
-    toggleActions: "play none none reverse",
-    ease: "none",
-  },
+
+ScrollTrigger.create({
+  trigger: wrapper,
+  pin: true,
+  start: "top top",
+  end: "bottom bottom",
+  markers: true,
 });
-begTl.fromTo(
-  "#viewport-one",
 
-  {
-    opacity: 1,
-  },
-  {
-    opacity: 0,
-    duration: 0.01,
+let viewports = gsap.utils.toArray(".viewport");
+
+viewports.forEach((viewport, i) => {
+  if (i + 1 < viewports.length) {
+    console.log(viewports[i + 1].id);
+    let begTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: document.body,
+        start: () => `top+=${i * window.innerHeight} top`,
+        end: () => `top+=${(i + 1) * window.innerHeight} top`,
+        markers: true,
+        toggleActions: "play none none reverse",
+      },
+    });
+    begTl.fromTo(
+      "#" + viewports[i].id,
+      {
+        display: "grid",
+      },
+      {
+        display: "none",
+        opacity: 0,
+        duration: 0.01,
+      }
+    );
+
+    begTl.fromTo(
+      "#" + viewports[i + 1].id,
+      {
+        opacity: 0,
+        display: "none",
+      },
+      {
+        opacity: 1,
+        duration: 0.01,
+
+        display: "grid",
+      }
+    );
   }
-);
+});
 
-begTl.fromTo(
-  "#viewport-two",
+viewports[0].style.opacity = 1;
 
-  {
-    opacity: 0,
-  },
-  {
-    opacity: 1,
-    duration: 0.01,
-  }
-);
-begTl.fromTo(
-  "#viewport-three",
+// Logo to header animation
+// let begTl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: document.body,
+//     start: `top+=${window.innerHeight} top`,
+//     end: `top+=${2 * window.innerHeight} top`,
+//     markers: true,
+//     toggleActions: "play none none reverse",
+//   },
+// });
+// begTl.fromTo(
+//   "#viewport-one",
+//   {
+//     opacity: 1,
+//     display: "grid",
+//   },
+//   {
+//     display: "none",
+//     opacity: 0,
+//     duration: 0.01,
+//   }
+// );
 
-  {
-    opacity: 0,
-  },
-  {
-    opacity: 1,
-    duration: 0.01,
-  }
-);
+// begTl.fromTo(
+//   "#viewport-two",
+//   {
+//     opacity: 0,
+//     display: "none",
+//   },
+//   {
+//     opacity: 1,
+//     duration: 0.01,
+
+//     display: "grid",
+//   }
+// );
+
+// let laterTl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#viewport-two",
+//     start: 300,
+//     end: "+=" + window.innerHeight - 1,
+//     markers: true,
+//     pin: wrapper,
+//     toggleActions: "play none none reverse",
+//   },
+// });
+// laterTl.fromTo(
+//   "#viewport-three",
+//   {
+//     opacity: 0,
+//     display: "none",
+//   },
+//   {
+//     opacity: 1,
+//     duration: 0.01,
+
+//     display: "grid",
+//   }
+// );
