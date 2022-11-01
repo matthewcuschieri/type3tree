@@ -55,6 +55,7 @@ header {
 
 #wrapper {
   grid-template-rows: auto;
+  height: 2000vh;
 }
 .wrapperviewport {
   /* overflow-y: hidden;
@@ -65,12 +66,12 @@ header {
   max-height: 100vh; */
 }
 div[class^="viewport"] {
-  position: sticky;
+  opacity: 0;
   height: 101vh;
   width: 100vw;
   scroll-snap-type: proximity;
   margin: 0px;
-
+  position: absolute;
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -79,16 +80,123 @@ div[class^="viewport"] {
 }
 
 #viewport-one {
+  z-index: 20;
   position: absolute;
 }
 
 #viewport-two {
+  z-index: 19;
   position: absolute;
   opacity: 0;
+  display: none;
 }
 #viewport-three {
+  z-index: 18;
   position: absolute;
   opacity: 0;
+  display: none;
+}
+#viewport-four {
+  z-index: 17;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-five {
+  z-index: 16;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-six {
+  z-index: 15;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-seven {
+  z-index: 14;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-eight {
+  z-index: 13;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-nine {
+  z-index: 12;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-ten {
+  z-index: 11;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-eleven {
+  z-index: 10;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-twelve {
+  z-index: 9;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-thirteen {
+  z-index: 8;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-fourteen {
+  z-index: 7;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-fifteen {
+  z-index: 6;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-sixteen {
+  z-index: 5;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-seventeen {
+  z-index: 4;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-eighteen {
+  z-index: 3;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-nineteen {
+  z-index: 2;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+#viewport-twenty {
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  display: none;
 }
 
 .one {
@@ -1302,9 +1410,19 @@ div {
 .wrapperviewport .viewport:nth-child(2) {
   display: none;
 }
-.viewport {
-  display: none;
-}
+
 .viewport.active {
   display: grid;
+} */
+
+/* .divtest {
+  z-index: 10;
+  color: red;
+  height: 600px;
+  width: 10px;
+  position: relative;
+}
+
+#divtestwrapper {
+  position: absolute;
 } */
