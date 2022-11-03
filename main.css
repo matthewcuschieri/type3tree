@@ -25,18 +25,18 @@ a:hover {
   z-index: 100000;
   position: fixed;
   top: 50%;
+  font-family: "Arnhem";
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .example {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 header {
-  font-family: Helvetica, sans-serif;
+  font-family: "diatype", sans-serif;
   color: #fff;
   width: 100%;
   justify-content: center;
@@ -57,14 +57,7 @@ header {
   grid-template-rows: auto;
   height: 2000vh;
 }
-.wrapperviewport {
-  /* overflow-y: hidden;
-  overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100vw;
-  max-height: 100vh; */
-}
+
 div[class^="viewport"] {
   opacity: 0;
   height: 101vh;
@@ -225,7 +218,7 @@ div[class^="viewport"] {
   margin: 0;
   padding: 0;
   height: 100%;
-
+  line-height: 1.2;
   font-size: 13px;
   text-align: center;
   padding-right: 3rem !important;
@@ -246,9 +239,10 @@ div[class^="viewport"] {
   height: 100%;
   margin-top: 0;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
+  font-weight: 300;
   display: flex;
   align-items: center;
   align-self: center;
@@ -271,7 +265,7 @@ div[class^="viewport"] {
   align-self: center;
   top: 0;
 
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -291,7 +285,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -311,7 +305,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -331,7 +325,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -351,7 +345,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -371,7 +365,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -391,7 +385,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -411,7 +405,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -431,7 +425,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -451,7 +445,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -471,7 +465,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -491,7 +485,7 @@ div[class^="viewport"] {
   display: flex;
   align-items: center;
   align-self: center;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   justify-self: center;
@@ -512,7 +506,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -532,7 +526,7 @@ div[class^="viewport"] {
   display: flex;
   align-items: center;
   align-self: center;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   justify-self: center;
@@ -553,7 +547,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -573,7 +567,7 @@ div[class^="viewport"] {
   display: flex;
   align-items: center;
   align-self: center;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   justify-self: center;
@@ -594,7 +588,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -614,7 +608,7 @@ div[class^="viewport"] {
   display: flex;
   align-items: center;
   align-self: center;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   justify-self: center;
@@ -635,7 +629,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -655,7 +649,7 @@ div[class^="viewport"] {
   display: flex;
   align-items: center;
   align-self: center;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   justify-self: center;
@@ -677,7 +671,7 @@ div[class^="viewport"] {
   align-items: center;
   align-self: center;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -697,7 +691,7 @@ div[class^="viewport"] {
   align-self: center;
   margin-top: 0;
   top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   text-align: center;
@@ -717,7 +711,7 @@ div[class^="viewport"] {
   display: flex;
   align-items: center;
   align-self: center;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   font-size: 500px;
   justify-self: center;
@@ -731,7 +725,7 @@ div[class^="viewport"] {
   color: #0f0f0f;
   width: 100%;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -742,13 +736,17 @@ div[class^="viewport"] {
   text-justify: inter-word;
 }
 
+div[class^="big"]:hover {
+  font-weight: 550;
+  text-decoration: underline;
+}
 div[class^="secondback"] {
   color: #0f0f0f;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -763,7 +761,7 @@ div[class^="thirdback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -778,7 +776,7 @@ div[class^="fourthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -793,7 +791,7 @@ div[class^="fifthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -808,7 +806,7 @@ div[class^="sixthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -823,7 +821,7 @@ div[class^="seventhback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -838,7 +836,7 @@ div[class^="eigthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -853,7 +851,7 @@ div[class^="ninthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -868,7 +866,7 @@ div[class^="tenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -883,7 +881,7 @@ div[class^="eleventhback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -898,7 +896,7 @@ div[class^="twelthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -913,7 +911,7 @@ div[class^="thirteenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -928,7 +926,7 @@ div[class^="fourteenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -943,7 +941,7 @@ div[class^="fifteenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -958,7 +956,7 @@ div[class^="seventeenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -973,7 +971,7 @@ div[class^="eighteenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -988,7 +986,7 @@ div[class^="nineteenthback"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   max-height: 100vh;
   text-align: left;
@@ -1003,9 +1001,10 @@ div[class^="nineteenthback"] {
   margin-bottom: 0 !important;
   grid-column: 1;
   height: 100%;
-  border-right: 5px #0f0f0f solid;
+  border-right: 0.4rem #0f0f0f solid;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 2px 1px #0f0f0f;
 }
 #sidetwo {
   margin-bottom: 0 !important;
@@ -1013,9 +1012,10 @@ div[class^="nineteenthback"] {
   height: 100%;
   width: 100%;
   display: flex;
-  border-left: 5px #0f0f0f solid;
+  border-left: 0.4rem #0f0f0f solid;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 2px 1px #0f0f0f;
 }
 #contentone {
   margin-bottom: 0 !important;
@@ -1092,16 +1092,26 @@ that the width is big enough to contain all items.
   max-width: 70%;
   margin-left: 2vw;
   font-size: 30px;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   line-height: 1.25;
-  font-family: Union Regular, sans-serif;
+  font-family: "diatype", sans-serif;
   font-size: 1.675vw;
   background-color: white;
+  overflow: hidden; /* Hide scrollbars */
+}
+@font-face {
+  font-family: Arnhem;
+  src: url("ArnhemFine-Normal.otf") format("opentype");
+}
+@font-face {
+  font-family: diatype;
+  src: url("ABCDiatypePlusVariable-Trial.woff") format("woff-variations");
 }
 #serif {
   max-width: 20rem;
   margin: 0;
   padding: 0;
+  font-family: "Arnhem";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1130,6 +1140,10 @@ div[class^="fig"] {
   justify-content: center;
   align-items: center;
 }
+div[class^="fig"]:hover {
+  text-decoration: underline;
+}
+
 /*
 These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
@@ -1191,7 +1205,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
 
@@ -1205,7 +1219,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
 
@@ -1219,7 +1233,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
 
@@ -1233,7 +1247,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1246,7 +1260,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1259,7 +1273,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1272,7 +1286,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1285,7 +1299,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1298,7 +1312,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1311,7 +1325,7 @@ img {
   display: block;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  font-family: helvetica;
+  font-family: "diatype";
   margin-bottom: 0;
   text-align: left;
   height: 100%;
@@ -1335,10 +1349,11 @@ img {
 .row {
   background-color: #0f0f0f;
   width: 100vw;
-  height: 1rem;
+  height: 0.9rem;
   margin-left: 2.4vw;
   margin-right: 2.4vw;
   z-index: 800;
+  box-shadow: 2px 2px 2px 1px #0f0f0f;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1347,10 +1362,10 @@ img {
 }
 .col {
   background-color: #0f0f0f;
-  width: 1rem;
+  width: 0.9rem;
   height: 100vh;
   margin: 0;
-
+  box-shadow: 2px 2px 2px 1px #0f0f0f;
   z-index: 800;
   position: fixed;
   top: 50%;
@@ -1360,7 +1375,7 @@ img {
 }
 #left {
   grid-column: 1;
-
+  box-shadow: 2px 2px 2px 1px #0f0f0f;
   margin: 0;
   position: fixed;
   top: 52.8%;
@@ -1368,10 +1383,13 @@ img {
   transform: translateY(-50%);
 }
 #right {
+  box-shadow: 2px 2px 2px 1px #0f0f0f;
   grid-column: 7;
   margin: 0;
   position: fixed;
+  z-index: 10000;
   top: 52.8%;
+  right: 0;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -1382,6 +1400,7 @@ img {
   padding-top: 0.4%;
   padding-bottom: 0.4%;
   color: #fff;
+  font-weight: 900;
   border-radius: 16px;
 }
 div {
@@ -1389,8 +1408,12 @@ div {
 }
 
 #title {
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
+  font-family: "diatype", sans-serif;
+  font-weight: 300;
+  font-stretch: ultra-condensed;
+
+  letter-spacing: -0.6px;
+  padding: 0.3rem;
 }
 #info {
   padding-bottom: 0;
@@ -1401,6 +1424,10 @@ div {
   justify-self: baseline;
   bottom: 0;
   margin-top: auto;
+  padding: 0.3rem;
+
+  margin-bottom: 4vh;
+  overflow-y: scroll;
 }
 
 /* .wrapperviewport .viewport:nth-child(1) {
