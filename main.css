@@ -3,9 +3,12 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 a:visited {
@@ -1098,6 +1101,11 @@ that the width is big enough to contain all items.
   font-size: 1.675vw;
   background-color: white;
   overflow: hidden; /* Hide scrollbars */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#bodytext::-webkit-scrollbar {
+  display: none;
 }
 @font-face {
   font-family: Arnhem;
